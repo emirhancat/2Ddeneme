@@ -267,10 +267,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 303449456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67153749ea639b048bbad30ca70ada23, type: 3}
+  m_Script: {fileID: 11500000, guid: 7533ac4b4be4433418c52b997570dea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstName: 
+  amount: 100
+  percentage: 0.2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +683,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1347342689}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 303449460}
+        m_TargetAssemblyTypeName: TipCalculator, Assembly-CSharp
+        m_MethodName: calculateTip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1347342689
 MonoBehaviour:
   m_ObjectHideFlags: 0
