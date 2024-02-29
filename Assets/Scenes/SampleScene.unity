@@ -267,11 +267,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 303449456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7533ac4b4be4433418c52b997570dea7, type: 3}
+  m_Script: {fileID: 11500000, guid: d5c329f272558474bae0dd04bb5ea851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amount: 100
-  percentage: 0.2
+  guess: 0
+  randomNumber: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,8 +685,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 303449460}
-        m_TargetAssemblyTypeName: TipCalculator, Assembly-CSharp
-        m_MethodName: calculateTip
+        m_TargetAssemblyTypeName: GuessNumber, Assembly-CSharp
+        m_MethodName: CheckGuess
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
